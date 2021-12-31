@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:elevation="2dp"
+    android:background="@color/white"
+    android:padding="4dp">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="10dp"/>
+
+    <TextView
+        android:id="@+id/takensubjectNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        tools:text="John Doe" />
+
+    <TextView
+        android:id="@+id/codeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_code"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/takensubjectNameTextView" />
+
+    <TextView
+        android:id="@+id/takensubjectCodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/codeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/takensubjectNameTextView"
+        tools:text="100145"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"/>
+
+    <TextView
+        android:id="@+id/creditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subject_credit"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/takensubjectCodeTextView"/>
+
+    <TextView
+        android:id="@+id/takensubjectCreditTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="01559541265"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintStart_toEndOf="@+id/creditTitle"
+        app:layout_constraintTop_toBottomOf="@+id/takensubjectCodeTextView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
